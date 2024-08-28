@@ -9,4 +9,4 @@ ln -s ~/.dotfiles/.zshrc ~/.zshrc
 ln -s ~/.dotfiles/.tmux.conf ~/.tmux.conf
 ln -s ~/.dotfiles/config/bat ~/.config/bat
 ln -s ~/.dotfiles/vim/colors ~/.vim/colors
-
+batcat cache --build 2&>1 /dev/null
