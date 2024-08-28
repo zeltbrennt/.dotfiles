@@ -38,3 +38,5 @@ bind \cf fzf_file
 bind \cg fzf_dir
 abbr sf fzf_file
 abbr sd fzf_dir
+abbr fd fdfind
+abbr bat batcat

@@ -1,6 +1,8 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
 SETUVAR __fish_initialized:3100
+SETUVAR _fish_abbr_bat:batcat
+SETUVAR _fish_abbr_fd:fdfind
 SETUVAR _fish_abbr_sd:fzf_dir
 SETUVAR _fish_abbr_sf:fzf_file
 SETUVAR fish_color_cwd_root:red
