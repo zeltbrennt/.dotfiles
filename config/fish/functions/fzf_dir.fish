@@ -1,5 +1,5 @@
 function fzf_dir
-    set -l target (fdfind -td --no-ignore -E ".git" | fzf \
+    set -l target (fdfind -td --no-ignore --hidden -E ".git" | fzf \
     --preview 'tree -C {}' \
     --reverse \
     --bind ctrl-p:toggle-preview \
