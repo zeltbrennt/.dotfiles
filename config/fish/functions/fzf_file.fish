@@ -1,6 +1,6 @@
 function fzf_file
-    set -l target (fdfind -tf --hidden -E ".git" | fzf \
-    --preview 'batcat --color=always --style=plain {}' \
+    set -l target (fd -tf --hidden -E ".git" | fzf \
+    --preview 'bat --color=always --style=plain {}' \
     --preview-window bottom:60% \
     --reverse \
     --bind ctrl-p:toggle-preview \
