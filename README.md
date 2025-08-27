@@ -46,6 +46,20 @@
     { "<c-\\>", "<cmd><C-U>TmuxNavigatePrevious<cr>" },
   },
 }` into `~/.config/nvim/lua/plugins/nvim-tmux-navigator.lua`
+- [Lualine](https://github.com/nvim-lualine/lualine.nvim)
+  - modiefies the NeoVim Statusline
+  - `return {
+  "nvim-lualine/lualine.nvim",
+  event = "VeryLazy",
+  config = function(_, opts)
+    require("lualine").setup({
+      options = {
+        section_separators = { left = "", right = "" },
+        component_separators = { left = "", right = "" },
+      },
+    })
+  end,
+}` into `~/.config/nvim/lua/plugins/lualine.lua`
 
 ### Tools
 
