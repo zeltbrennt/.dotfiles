@@ -23,6 +23,7 @@
 - [NeoVim](https://neovim.io/)
   - Text Editor, replaces Vim
   - `sudo dnf install -y neovim python3-neovim`
+  - restore `config/nvim` to get all configurations
 - [LazyVim](https://www.lazyvim.org/)
   - Starterkit to improve Neovim Experience
   - `git clone https://github.com/LazyVim/starter ~/.config/nvim`
