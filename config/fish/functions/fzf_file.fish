@@ -6,6 +6,6 @@ function fzf_file
     --bind ctrl-p:toggle-preview \
     --header (pwd))
     if test -n "$target"
-        vim $target
+        nvim $target
     end
 end
