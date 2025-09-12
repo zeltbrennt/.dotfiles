@@ -1,14 +1,6 @@
 function compile_latex
-    if test (count $argv) -eq 0
-        echo "Usage: compile <filename.tex>"
-        exit 1
-    end
 
-    set TEXFILE $argv[1]
-    if not test -f $TEXFILE
-        echo "File $TEXFILE does not exist"
-        exit 1
-    end
+    set TEXFILE (rg -l "%\s?!\s?TEX\s+root" (fd -e tex))
 
     if not type -q docker
         echo "Docker not installed"
@@ -26,5 +18,5 @@ function compile_latex
         -v "$PROJECT:/data" \
         -w /data \
         $IMAGE \
-        /bin/bash -c "pdflatex $TEXFILE && biber $(basename $TEXFILE .tex) && pdflatex $TEXFILE && pdflatex $TEXFILE"
+        /bin/bash -c "latexmk -pdf $TEXFILE"
 end
