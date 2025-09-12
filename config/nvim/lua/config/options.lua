@@ -3,4 +3,4 @@
 -- Add any additional options here
 --
 vim.o.shell = "fish"
-vim.opt.clipboard = "unnamedplus"
+vim.opt.clipboard = ""
